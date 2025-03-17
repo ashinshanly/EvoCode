@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Error {{ code }} - EvoCode{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow-sm">
+            <div class="card-header bg-danger text-white">
+                <h5 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Error {{ code }}</h5>
+            </div>
+            <div class="card-body text-center py-5">
+                <div class="display-1 text-danger mb-4">
+                    <i class="bi bi-emoji-frown"></i>
+                </div>
+                
+                <h2 class="mb-4">{{ error }}</h2>
+                
+                {% if code == 404 %}
+                <p class="lead">The page you're looking for doesn't exist.</p>
+                {% elif code == 500 %}
+                <p class="lead">Something went wrong on our server. Our team has been notified.</p>
+                {% else %}
+                <p class="lead">An error occurred while processing your request.</p>
+                {% endif %}
+                
+                <div class="mt-5">
+                    <a href="{{ url_for('main.index') }}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-house me-2"></i>Return to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
