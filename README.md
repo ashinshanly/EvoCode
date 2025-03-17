@@ -16,7 +16,7 @@ EvoCode is a Python library that uses evolutionary algorithms to evolve and opti
 
 ## Installation
 
-### From PyPI (Recommended)
+### From PyPI (To do)
 
 ```bash
 pip install evocode
