@@ -8,10 +8,14 @@ EvoCode is a Python library that uses evolutionary algorithms to evolve and opti
 
 ## Features
 
+- **Automated Code Optimization**: Evolves code to improve execution speed, memory usage, and accuracy
+- **Interactive Web Interface**: Visualize the evolution process in real-time with performance metrics
+- **Mutation Strategies**: Implements various code mutation techniques to explore the solution space
+- **Performance Benchmarking**: Accurately measures and compares code performance before and after evolution
+- **Test Case Validation**: Ensures evolved code maintains functional correctness
 - **AST-Based Mutations**: Intelligently mutate code at the Abstract Syntax Tree level
 - **Multiple Optimization Metrics**: Optimize for speed, accuracy, or combined metrics
 - **Parallel Evaluation**: Evaluate function variants in parallel using multiprocessing
-- **Visualization Tools**: Visualize the evolution process and results
 - **Robust Error Handling**: Gracefully handle exceptions and timeouts during evolution
 
 ## Installation
@@ -85,7 +89,9 @@ EvoCode uses genetic programming techniques to evolve code:
 5. **Crossover**: Combine code from different successful variants (optional)
 6. **Repeat**: Iterate the process for multiple generations
 
-Mutations are applied at the AST (Abstract Syntax Tree) level, allowing for semantically aware code transformations that maintain the basic functionality while improving performance or other metrics.
+Mutations are applied at the AST (Abstract Syntax Tree) level, allowing for semantically aware code transformations that maintain the basic functionality while improving performance or other metrics. The system takes an initial function implementation and a set of test cases, then applies evolutionary principles to generate optimized versions. Through successive generations of mutation and selection, the code evolves toward better performance while maintaining correct behavior.
+
+The web interface provides real-time visualization of the evolution process, showing fitness improvements, mutation history, and final optimized code with performance comparisons.
 
 ## Use Cases
 
@@ -93,6 +99,14 @@ Mutations are applied at the AST (Abstract Syntax Tree) level, allowing for sema
 - **Numerical Accuracy**: Improve precision in numerical calculations
 - **Code Refactoring**: Transform code to equivalent but cleaner or more efficient forms
 - **Research**: Explore evolutionary computation and genetic programming
+
+## Technologies
+- Python backend with Flask web framework
+- JavaScript frontend with real-time data visualization
+- Genetic programming algorithms for code evolution
+- Performance benchmarking and analysis tools
+
+This project demonstrates the potential of evolutionary algorithms in software optimization and provides a framework for exploring automated code improvement techniques.
 
 ## Contributing
 
