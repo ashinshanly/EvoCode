@@ -72,7 +72,7 @@ More examples can be found in the `/examples` directory:
 
 ## Documentation
 
-For detailed documentation, visit [https://evocode.readthedocs.io](https://evocode.readthedocs.io)
+For detailed documentation, visit [https://evocode.readthedocs.io](https://evocode.readthedocs.io) (To do)
 
 ## How It Works
 
